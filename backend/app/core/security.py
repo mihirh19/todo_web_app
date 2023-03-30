@@ -1,6 +1,11 @@
 from passlib.context import CryptContext
+from typing import Any, Union
 
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+
+def create_access_token(subject: Union[str, Any], expires_delta: int = None) -> str:
+    pass
 
 
 def get_password(password: str) -> str:
