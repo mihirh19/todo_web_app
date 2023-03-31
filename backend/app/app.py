@@ -25,3 +25,8 @@ async def app_init():
     )
 
 app.include_router(router, prefix=settings.API_V1_STR)
+
+
+@app.get('/')
+def index():
+    return {'message' : "server is running", "documents" : "http://localhost:8000/docs"}
