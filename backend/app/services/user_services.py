@@ -1,9 +1,9 @@
 from typing import Optional
 from uuid import UUID
 
-from ..schemas.user_schema import UserAuth
-from ..models.user_model import User
-from ..core.security import get_password, verify_password
+from ..schemas import UserAuth
+from ..models import User
+from ..core import get_password, verify_password
 
 
 class UserService:

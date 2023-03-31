@@ -1,10 +1,10 @@
 from uuid import UUID
 from typing import List
 from fastapi import APIRouter, Depends
-from ....schemas.todo_schema import TodoOut, TodoUpdate, TodoCreate
-from ....models.user_model import User
-from ...deps.user_deps import get_current_user
-from ....models.todo_model import Todo
+from ....schemas import TodoOut, TodoUpdate, TodoCreate
+from ....models import User, Todo
+from ...deps import get_current_user
+
 from ....services.todo_services import TodoService
 
 todo_router = APIRouter()

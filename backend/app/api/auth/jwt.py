@@ -7,13 +7,13 @@ from typing import Any
 from jose import jwt
 from pydantic import ValidationError
 
-from ..deps.user_deps import get_current_user
-from ...core.config import settings
-from ...models.user_model import User
-from ...services.user_services import UserService
-from ...core.security import create_refresh_token, create_access_token
-from ...schemas.auth_schema import TokenSchema, TokenPayload
-from ...schemas.user_schema import UserOut
+from ..deps import get_current_user
+from ...core import settings, create_access_token, create_refresh_token
+from ...models import User
+# from ...services.user_services import UserService
+from ...services import UserService
+# from ...core.security import create_refresh_token, create_access_token
+from ...schemas import TokenSchema, TokenPayload, UserOut
 
 auth_router = APIRouter()
 

@@ -3,8 +3,10 @@ from uuid import UUID, uuid4
 from typing import Optional
 from beanie import Document, Indexed, Link, before_event, Replace, Insert
 from pydantic import Field, EmailStr
-from .user_model import User
+from ..models.user_model import User
 
+
+# from .user_model import User
 
 class Todo(Document):
     todo_id: UUID = Field(default_factory=uuid4, unique=True)
