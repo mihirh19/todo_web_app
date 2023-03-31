@@ -11,7 +11,7 @@
 
 > This project is made with react,fastapi and mongodb (FARM stack) 
 
-### 🏠 [Homepage](app)
+### 🏠 [Homepage](https://github.com/mihirh19/todo_web_app/)
 
 ## Install
 
