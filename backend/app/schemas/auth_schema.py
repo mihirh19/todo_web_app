@@ -1,5 +1,12 @@
+from uuid import UUID
+
 from pydantic import BaseModel
 
 class TokenSchema(BaseModel):
-    acces_token : str
+    access_token : str
     refresh_token : str
+
+
+class TokenPayload(BaseModel):
+    sub : UUID = None
+    exp : int
