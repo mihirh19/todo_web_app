@@ -71,7 +71,7 @@ source env/bin/activate
 Assuming you are in the backend directory.
 
 ```bash
-python main.py
+uvicorn backend.app:app --reload
 ```
 
 <hr>
