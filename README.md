@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Todo_with_FastAPI 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="http://localhost:8000/doc" target="_blank">
+  <a href="https://documenter.getpostman.com/view/22926184/2s93RUtBH8" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://twitter.com/mihirh21" target="_blank">
@@ -71,7 +71,7 @@ source env/bin/activate
 Assuming you are in the backend directory.
 
 ```bash
-uvicorn app.app:app --reload
+python main.py
 ```
 
 <hr>
