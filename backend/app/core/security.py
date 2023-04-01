@@ -27,7 +27,7 @@ def create_refresh_token(subject: Union[str, Any], expires_delta: int = None) ->
     to_encode = {"exp": expires_delta, "sub": str(subject)}
     encoded_jwt = jwt.encode(to_encode, settings.JWT_REFRESH_SECRET_KEY, algorithm=settings.ALGORITHM)
     return encoded_jwt
-
+1
 
 def get_password(password: str) -> str:
     return password_context.hash(password)
