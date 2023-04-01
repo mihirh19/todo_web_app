@@ -1,0 +1,40 @@
+
+
+
+
+
+### Create a new user
+POST http://localhost:8000/api/v1/users/create
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "username": "string",
+  "password": "string"
+}
+
+### Auth the user
+POST http://localhost:8000/api/v1/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=user@example.com&password=string
+
+
+
+### Test the token
+POST http://localhost:8000/api/v1/auth/test-token
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
+Content-Type: application/x-www-form-urlencoded
+
+
+
+### Create a New Token through Refresh Token
+POST http://localhost:8000/api/v1/auth/refresh
+accept: application/json
+Content-Type: application/json
+
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODA5NDk0ODMsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.TXv74ZcpQuvehiFMpxj89bgMPG_5cIfKDvGxFVBD5VE"
+
+
+###

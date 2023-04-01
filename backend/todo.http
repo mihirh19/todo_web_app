@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+### Get all todos of user
+GET http://localhost:8000/api/v1/todo/
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
+
+
+### Create a Todo for specific user
+POST http://localhost:8000/api/v1/todo/create
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
+Content-Type: application/json
+
+{
+  "title": "string",
+  "description": "string",
+  "status": false
+}
+
+
+### Get Todo by id
+GET http://localhost:8000/api/v1/todo/fc147627-ea73-431f-af24-4b2c72c68620
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
+
+
+### Update Todo by id
+PUT http://localhost:8000/api/v1/todo/fc147627-ea73-431f-af24-4b2c72c68620
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
+Content-Type: application/json
+
+{
+  "title": "string2",
+  "description": "string2",
+  "status": false
+}
+
+
+### Delete Todo By id
+DELETE http://localhost:8000/api/v1/todo/fc147627-ea73-431f-af24-4b2c72c68620
+accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODAzNDUzNjcsInN1YiI6IjJlMWQyMjUyLTkyM2MtNDk3ZS1hN2JmLTY1MzM2MjFhYWIxZiJ9.YUUBFvsFOJKj2Sj-Zcq0X7v7A8Rz00KNawDos0ew39Q
