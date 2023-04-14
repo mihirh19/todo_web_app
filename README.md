@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Todo_with_FastAPI 👋</h1>
+<h1 align="center">Welcome to Todoist_FastAPI 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://documenter.getpostman.com/view/22926184/2s93RUtBH8" target="_blank">
@@ -9,7 +9,8 @@
   </a>
 </p>
 
-`Todoist` is a full stack todo application built with FARM stack. FastAPI and MongoDB on the backend and ReactJS on the frontend.
+`Todoist` is a full stack todo application built with FARM stack. FastAPI and MongoDB on the backend and ReactJS on the
+frontend.
 
 ### 🏠 [Homepage](https://github.com/mihirh19/todo_web_app/)
 
@@ -17,7 +18,8 @@
 
 ## Backend
 
-To run the backend, you need to have local mongodb instance running on you can setup a deployed instance using [MongoDB Atlas](https://www.mongodb.com/atlas/database).
+To run the backend, you need to have local mongodb instance running on you can setup a deployed instance
+using [MongoDB Atlas](https://www.mongodb.com/atlas/database).
 
 ### Setting up python environment
 
@@ -34,7 +36,8 @@ python3 -m venv env
 # if still doesn't work, google is your best friend!
 ```
 
-If you're running the deployed instance, make sure to change the database connection string in `.env` file on the backend.
+If you're running the deployed instance, make sure to change the database connection string in `.env` file on the
+backend.
 
 ### Setting up `.env` file
 
