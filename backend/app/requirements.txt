@@ -1,3 +1,3 @@
 python-decouple
 fastapi
-uvicorn
+uvicorn==0.22.0
